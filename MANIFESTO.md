@@ -66,7 +66,7 @@ No component should assume responsibilities that belong to another.
 
 Aegis exists to solve real operational problems.
 
-The project evolves through practical experience rather than hypothetical requirements.
+The project evolves through operational experience rather than hypothetical requirements.
 
 Architectural flexibility is valuable only when it supports real-world needs.
 

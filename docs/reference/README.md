@@ -1,16 +1,14 @@
-# Concepts
+# Reference
 
-This directory contains the conceptual foundations of Aegis.
+This directory contains the reference documentation for Aegis.
 
-Concepts define the language and mental model used throughout the project. They describe _what_ things are, not _how_ they are implemented.
+Reference documents define the common language, conventions and writing guidelines used throughout the project.
+
+Unlike architecture documents or ADRs, these documents describe concepts and standards that remain stable over time.
 
 Examples include:
 
--   Events
--   State
--   Actions
--   Workflows
--   Providers
--   Hooks
--   Recorders
--   Replay
+-   Glossary
+-   Documentation Style
+-   Naming Conventions
+-   Terminology
