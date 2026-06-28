@@ -6,8 +6,6 @@ These principles are intended to guide every architectural decision, implementat
 
 When a new feature conflicts with these principles, the feature must justify the exception—not the other way around.
 
----
-
 # Simple
 
 Complexity is introduced only when it solves a real operational problem.
@@ -15,8 +13,6 @@ Complexity is introduced only when it solves a real operational problem.
 Every abstraction must justify its existence through a concrete use case.
 
 The simplest solution that satisfies the requirements is preferred.
-
----
 
 # Deterministic
 
@@ -26,8 +22,6 @@ System behavior must never depend on implicit state, execution timing or infrast
 
 Determinism is the foundation of trust.
 
----
-
 # Explainable
 
 Every decision must be understandable.
@@ -36,8 +30,6 @@ Operators should always be able to determine why a decision was made and which e
 
 Behavior should never rely on hidden logic or implicit assumptions.
 
----
-
 # Facts Before Assumptions
 
 Reality is represented through immutable events.
@@ -45,8 +37,6 @@ Reality is represented through immutable events.
 Events describe facts that happened.
 
 State is derived from those facts.
-
----
 
 # Decisions Before Actions
 
@@ -57,8 +47,6 @@ Providers execute them.
 Business logic belongs exclusively to the Core.
 
 Infrastructure-specific code must never alter workflow behavior.
-
----
 
 # Separation of Responsibilities
 
@@ -74,8 +62,6 @@ Recorders persist.
 
 No component should assume responsibilities that belong to another.
 
----
-
 # Practical Engineering
 
 Aegis exists to solve real operational problems.
@@ -84,8 +70,6 @@ The project evolves through practical experience rather than hypothetical requir
 
 Architectural flexibility is valuable only when it supports real-world needs.
 
----
-
 # Long-Term Thinking
 
 Architecture should enable future evolution without requiring premature abstraction.
@@ -93,8 +77,6 @@ Architecture should enable future evolution without requiring premature abstract
 The project grows incrementally.
 
 Capabilities are added when operational requirements demonstrate their necessity.
-
----
 
 # Trust
 
