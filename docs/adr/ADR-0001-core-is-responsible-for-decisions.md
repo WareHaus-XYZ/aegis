@@ -2,6 +2,8 @@
 
 **Status:** Accepted
 
+**Amended:** 2026-11-24. Scope note and wording of the consequences clarified; the decision is unchanged.
+
 ## Context
 
 Aegis is intended to automate responses to critical infrastructure events such as power failures while remaining deterministic, testable and infrastructure-independent.
@@ -22,6 +24,8 @@ The architecture is divided into three distinct responsibilities:
 -   **The Core** evaluates those facts and produces deterministic decisions through explicit state transitions.
 -   **Providers** execute the requested actions and report execution results back as new events.
 
+This decision covers how decisions are made and executed. Persisting events is a separate responsibility, assigned to [Recorders](../reference/glossary.md#recorder), and is outside the scope of this ADR.
+
 Providers must never alter workflows, introduce business logic, or make autonomous decisions.
 
 Likewise, the Core must never communicate directly with infrastructure.
@@ -41,7 +45,9 @@ The Core remains entirely unaware of Proxmox, UPS vendors, Linux services or any
 
 ## Consequences
 
-All infrastructure integrations must be implemented as Providers.
+All infrastructure integrations that execute actions must be implemented as Providers.
+
+Integrations that observe the external world must be implemented as Event Sources.
 
 Providers translate Core decisions into infrastructure operations and translate execution results into events.
 

@@ -6,7 +6,7 @@ These principles are intended to guide every architectural decision, implementat
 
 When a new feature conflicts with these principles, the feature must justify the exception—not the other way around.
 
-# Simple
+## Simple
 
 Complexity is introduced only when it solves a real operational problem.
 
@@ -14,7 +14,7 @@ Every abstraction must justify its existence through a concrete use case.
 
 The simplest solution that satisfies the requirements is preferred.
 
-# Deterministic
+## Deterministic
 
 Given the same sequence of events, Aegis must always produce the same sequence of decisions.
 
@@ -22,7 +22,7 @@ System behavior must never depend on implicit state, execution timing or infrast
 
 Determinism is the foundation of trust.
 
-# Explainable
+## Explainable
 
 Every decision must be understandable.
 
@@ -30,7 +30,7 @@ Operators should always be able to determine why a decision was made and which e
 
 Behavior should never rely on hidden logic or implicit assumptions.
 
-# Facts Before Assumptions
+## Facts Before Assumptions
 
 Reality is represented through immutable events.
 
@@ -38,7 +38,7 @@ Events describe facts that happened.
 
 State is derived from those facts.
 
-# Decisions Before Actions
+## Decisions Before Actions
 
 The Core makes decisions.
 
@@ -48,7 +48,7 @@ Business logic belongs exclusively to the Core.
 
 Infrastructure-specific code must never alter workflow behavior.
 
-# Separation of Responsibilities
+## Separation of Responsibilities
 
 Every component has a single responsibility.
 
@@ -62,7 +62,7 @@ Recorders persist.
 
 No component should assume responsibilities that belong to another.
 
-# Practical Engineering
+## Practical Engineering
 
 Aegis exists to solve real operational problems.
 
@@ -70,7 +70,7 @@ The project evolves through operational experience rather than hypothetical requ
 
 Architectural flexibility is valuable only when it supports real-world needs.
 
-# Long-Term Thinking
+## Long-Term Thinking
 
 Architecture should enable future evolution without requiring premature abstraction.
 
@@ -78,7 +78,7 @@ The project grows incrementally.
 
 Capabilities are added when operational requirements demonstrate their necessity.
 
-# Trust
+## Trust
 
 The purpose of Aegis is not to prevent failures.
 

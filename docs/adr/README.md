@@ -5,3 +5,9 @@ This directory contains the Architecture Decision Records (ADRs) for Aegis.
 Every significant architectural decision must be documented as an ADR before implementation.
 
 ADRs capture the context, alternatives considered, decision made, and rationale, providing a permanent record of the project's evolution.
+
+## Index
+
+| ADR | Title | Status |
+|---|---|---|
+| [ADR-0001](ADR-0001-core-is-responsible-for-decisions.md) | The Core Is Responsible for Decisions | Accepted |

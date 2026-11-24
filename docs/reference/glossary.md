@@ -12,6 +12,14 @@ Actions are carried out by Providers and may succeed or fail.
 
 Examples include stopping a virtual machine, shutting down a host or invoking an external hook.
 
+## Business Logic
+
+The rules that determine how a workflow responds to events: which decisions are made in each state and which actions they request.
+
+Business logic belongs exclusively to the Core.
+
+Event Sources, Providers and Recorders contain only the infrastructure-specific code needed to observe, execute or persist.
+
 ## Core
 
 The deterministic decision-making component of Aegis.
@@ -40,6 +48,12 @@ A component responsible for observing external systems and translating observati
 
 Examples include UPS monitors, timers and manual triggers.
 
+## Execution Result
+
+An event reported by a Provider that describes the outcome of an action.
+
+Execution results are consumed by the Core like any other event.
+
 ## Provider
 
 A component responsible for executing actions on behalf of the Core.
@@ -54,15 +68,23 @@ Recorders enable auditing, diagnostics and replay.
 
 ## Replay
 
-The deterministic reconstruction of a previous execution by processing a recorded sequence of events.
+The deterministic reconstruction of the Core's states and decisions from a recorded sequence of events.
 
-Replay should always produce the same sequence of decisions.
+Replay must always produce the same sequence of decisions.
+
+Replay never sends actions to Providers and never consumes live events. The outcomes of actions are taken from the recorded execution results.
 
 ## State
 
 The current position within a workflow.
 
 State is derived from processed events and is never considered the source of truth.
+
+## Traceability
+
+The ability to follow every decision back to the events that produced it, and every action forward to its execution result.
+
+Traceability relies on the recorded sequence of events, decisions, actions and execution results.
 
 ## Workflow
 
