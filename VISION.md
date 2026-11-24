@@ -36,7 +36,7 @@ An infrastructure operator should always be able to answer:
 -   Why was this decision made?
 -   What actions were executed?
 -   Would the same events produce the same outcome?
--   Can the execution be replayed and verified?
+-   Can the decisions be replayed and verified?
 
 If these questions can always be answered, Aegis has achieved its purpose.
 

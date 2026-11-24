@@ -6,9 +6,9 @@ Reference documents define the common language, conventions and writing guidelin
 
 Unlike architecture documents or ADRs, these documents describe concepts and standards that remain stable over time.
 
-Examples include:
+## Documents
 
--   Glossary
--   Documentation Style
--   Naming Conventions
--   Terminology
+-   [Glossary](glossary.md)
+-   [Documentation Style](documentation-style.md)
+
+Planned: Naming Conventions.
